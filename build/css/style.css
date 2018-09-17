@@ -1,2 +1,926 @@
+@charset "UTF-8";
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
 body {
-  background: red; }
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #fff; }
+
+blockquote {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*Open Sans Regular*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+/*Open Sans Light*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+/*Open Sans Bold*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #283645; }
+
+.page-header__logo {
+  padding: 0 20px; }
+
+.logo-pink-header__svg {
+  margin-top: 5px;
+  margin-bottom: 18px;
+  margin-left: -72px; }
+
+.logo-pink-header__sign {
+  width: 74px;
+  height: 23px;
+  fill: #fff; }
+
+.logo-pink-header__star {
+  display: none; }
+
+.logo-pink-header__glasses {
+  display: none; }
+
+.logo-pink-header__glasses-crop {
+  display: none; }
+
+.logo-pink-header__stars {
+  display: none; }
+
+.main-nav {
+  background-color: #283645; }
+
+.main-nav__toggle {
+  display: none; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.site-list {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.site-list__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15); }
+
+.site-list__item:last-child {
+  box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 #000; }
+
+.site-list__item a {
+  text-decoration: none;
+  color: #fff; }
+
+.downloads {
+  position: relative;
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -7px;
+  background-repeat: no-repeat;
+  background-size: 707px;
+  height: 730px;
+  padding-top: 63px;
+  margin-bottom: 40px; }
+
+.downloads__wrapper {
+  padding: 0 20px; }
+
+.downloads::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 396px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom; }
+
+.downloads__title {
+  display: none; }
+
+.downloads__button {
+  display: block;
+  padding: 15px 0;
+  margin-top: 28px;
+  margin-bottom: 33px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 30px; }
+
+.downloads__apps {
+  padding: 0 21px; }
+
+.apps {
+  margin-bottom: 22px; }
+
+.apps__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.apps__link {
+  display: block;
+  width: 47px;
+  height: 56px; }
+
+.apps__link--apstore {
+  background: url("../img/logo-apple.svg") no-repeat top left;
+  background-size: 47px 56px; }
+
+.apps__link--googleplay {
+  background: url("../img/logo-android.svg") no-repeat center 8px;
+  background-size: 43px 47px; }
+
+.apps__link--windows {
+  background: url("../img/logo-microsoft.svg") no-repeat center 12px;
+  background-size: 44px 41px; }
+
+.downloads__description {
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+  padding-bottom: 30px; }
+
+.advantages {
+  margin-bottom: 42px; }
+
+.advantages__title {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+  margin-bottom: 30px; }
+
+.advantages__subtitle {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 28px;
+  color: #283645;
+  margin-bottom: 33px; }
+
+.advantages__wrapper {
+  position: relative;
+  padding-top: 82px; }
+
+.advantages__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat center top;
+  background-size: 100% 31px;
+  z-index: 0; }
+
+.advantages__list {
+  padding: 0 20px;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  background-color: #f2f2f2; }
+
+.advantages__list::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 286px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 9px; }
+
+.advantages__item {
+  position: relative;
+  color: #283645; }
+
+.advantage__name {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0; }
+
+.advantage__desc {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 32px; }
+
+.advantages__research {
+  display: none; }
+
+.reviews {
+  margin-bottom: 40px; }
+
+.reviews__wrapper {
+  padding: 0 20px; }
+
+.reviews__list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__item:nth-child(2) {
+  display: none; }
+
+.reviews__item:nth-child(3) {
+  display: none; }
+
+.reviews__client-name {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0; }
+
+.reviews__client-about {
+  display: none; }
+
+.reviews__text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 32px; }
+
+.reviews__nav {
+  display: none; }
+
+.reviews__nav--previous {
+  display: none; }
+
+.reviews__nav--next {
+  display: none; }
+
+.reviews__toggle,
+.rates__toggle {
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 0; }
+
+.slider__toggle {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border: 3px solid #bec2c7;
+  border-radius: 50%;
+  cursor: pointer; }
+
+span.slider__toggle--active {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+  cursor: default; }
+
+.rates {
+  margin-bottom: 45px; }
+
+.rates__wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 91px;
+  background-color: #f2f2f2; }
+
+.rates__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat center top;
+  background-size: 100% 31px;
+  z-index: 0; }
+
+.rates__table {
+  position: relative;
+  left: -144%;
+  margin-bottom: 40px; }
+
+.rates__table-title {
+  background-color: #283645; }
+
+.rates__table-cell {
+  background-color: #f2f2f2; }
+
+.rates__options {
+  position: relative;
+  min-width: 275px;
+  color: #fff; }
+
+.rates__name {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+.rates__price {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+.rates__options--hit {
+  background: url("../img/bg-hit.svg") no-repeat;
+  background-size: 73px 73px; }
+
+.rates__options--hit::before {
+  content: "хит";
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transform: rotate(-45deg); }
+
+.rates__item {
+  position: relative;
+  background-color: #fff;
+  line-height: 26px;
+  text-transform: uppercase; }
+
+.rates__feature {
+  display: block;
+  min-width: 200px;
+  padding: 15px 20px; }
+
+.rates__feature-status {
+  display: block;
+  position: absolute;
+  left: 5px;
+  padding: 15px 16px; }
+
+.rates__feature-status--on {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  background: url("../img/icon-yes.svg") no-repeat center right;
+  background-size: 31px 21px; }
+
+.rates__feature-status--off {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  background: url("../img/icon-no.svg") no-repeat center right;
+  background-size: 27px 26px; }
+
+.rates__toggle {
+  margin-bottom: 47px; }
+
+.contacts {
+  margin-bottom: 51px; }
+
+.contacts__title {
+  margin-bottom: 36px;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 24px;
+  color: #283645; }
+
+.contacts__subtitle {
+  display: block;
+  padding-top: 5px; }
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.contacts__item {
+  text-align: center; }
+
+.contacts__item-title {
+  color: #283645;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0; }
+
+.contacts__item-info {
+  display: block;
+  color: #d22856;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 22px; }
+
+.page-main__map {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center -220px; }
+
+.page-main__map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg-triangle-white-footer.svg) no-repeat center top;
+  background-size: 100% 31px; }
+
+.page-main__map::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 18px);
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-map-marker.svg") no-repeat center; }
+
+.page-footer {
+  display: none; }
+
+@media (min-width: 660px){
+  .logo-pink-header__svg{
+    margin-left: 0;
+    margin-top: 26px;
+    margin-bottom: 37px;
+    fill: #fff; }
+  .logo-pink-header__glasses{
+    display: block; }
+  .downloads{
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1300px;
+    height: 682px;
+    padding-top: 40px; }
+  .downloads::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 545px;
+    z-index: 1;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center; }
+  .downloads__wrapper{
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 83px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 51%; }
+  .downloads__title{
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    line-height: 48px;
+    padding: 0 50px;
+    margin-bottom: 3px; }
+  .downloads__button{
+    z-index: 2;
+    margin-bottom: 47px; }
+  .downloads__apps{
+    padding: 0 21px;
+    z-index: 2; }
+  .downloads__description{
+    padding-bottom: 95px;
+    z-index: 2; } }
