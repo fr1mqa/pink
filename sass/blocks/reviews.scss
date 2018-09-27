@@ -15,18 +15,11 @@
 }
 
 .reviews__item {
-
-}
-.reviews__client {
-
-}
-
-.reviews__item:nth-child(2) {
   display: none;
 }
 
-.reviews__item:nth-child(3) {
-  display: none;
+.reviews__item--current {
+  display: block;
 }
 
 .reviews__client-name {

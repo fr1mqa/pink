@@ -756,11 +756,11 @@ img {
   padding: 0;
   list-style: none; }
 
-.reviews__item:nth-child(2) {
+.reviews__item {
   display: none; }
 
-.reviews__item:nth-child(3) {
-  display: none; }
+.reviews__item--current {
+  display: block; }
 
 .reviews__client-name {
   font-size: 18px;
