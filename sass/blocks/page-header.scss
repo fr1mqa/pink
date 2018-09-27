@@ -1,0 +1,32 @@
+.page-header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  z-index: 2;
+
+  &--full {
+    position: relative;
+    background-color: #283645;
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .page-header--full {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrapper {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

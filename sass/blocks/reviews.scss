@@ -1,0 +1,145 @@
+
+.reviews {
+  margin-bottom: 40px;
+}
+
+.reviews__wrapper {
+  padding: 0 20px;
+}
+
+.reviews__list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+
+}
+.reviews__client {
+
+}
+
+.reviews__item:nth-child(2) {
+  display: none;
+}
+
+.reviews__item:nth-child(3) {
+  display: none;
+}
+
+.reviews__client-name {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.reviews__client-about {
+  display: none;
+}
+
+.reviews__text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.reviews__toggle,
+.rates__toggle {
+  display: flex;
+  width: 80px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0;
+
+}
+@media (min-width: 660px) {
+  .reviews {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+  }
+
+  .reviews__list {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  .reviews__client {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__client-name {
+    font-size: 20px;
+    line-height: 15px;
+    order: 2;
+  }
+
+  .reviews__client-about {
+    display: block;
+    order: 3;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 41px;
+    order: 1;
+  }
+}
+
+@media (min-width: 959px) {
+  .reviews {
+    width: 940px;
+    margin-bottom: 35px;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 70px;
+      background: url("../img/icon-quotes.svg") no-repeat center center;
+    }
+  }
+
+  .reviews__list {
+    display: flex;
+  }
+
+  .reviews__client {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__client-name {
+    font-size: 24px;
+    order: 2;
+  }
+
+  .reviews__client-about {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    order: 3;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 65px;
+    order: 1;
+  }
+
+  .reviews__toggle,
+  .rates__toggle {
+    display: flex;
+    width: 80px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0;
+
+  }
+}
