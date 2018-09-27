@@ -1,0 +1,75 @@
+.logo-pink-header__link {
+  width: 147px;
+  margin: 0 20px;
+}
+
+.logo-pink-header__svg {
+  margin-top: 5px;
+  margin-bottom: 18px;
+  margin-left: -72px;
+  fill: #fff;
+}
+
+.logo-pink-header__sign {
+  width: 74px;
+  height: 23px;
+}
+
+.logo-pink-header__star {
+  display: none;
+}
+
+.logo-pink-header__glasses {
+  display: none;
+}
+
+.logo-pink-header__glasses-crop {
+  display: none;
+}
+
+.logo-pink-header__stars {
+  display: none;
+}
+
+.logo-pink-header__link[href]:hover .logo-pink-header__svg {
+  fill: #d22856;
+}
+
+.logo-pink-header__link[href]:active .logo-pink-header__svg {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .logo-pink-header__svg {
+    margin-left: 0;
+    margin-top: 26px;
+    margin-bottom: 37px;
+  }
+
+  .logo-pink-header__glasses {
+    display: block;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .logo-pink-header__link {
+    margin-left: 0;
+  }
+
+  .logo-pink-header__star,
+  .logo-pink-header__stars {
+    display: block;
+    fill: #d22856;
+  }
+
+  .logo-pink-header__glasses {
+    fill: none;
+  }
+
+  .logo-pink-header__glasses-crop {
+    display: block;
+  }
+}

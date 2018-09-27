@@ -1,0 +1,21 @@
+.page-footer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-footer {
+    display: flex;
+  }
+  .page-footer {
+    width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 959px) {
+  .page-footer {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
