@@ -11638,7 +11638,6 @@ node_modules/yeast/README.md
 *.pdf
 *.psd
 *.sublime*
-build/
 css/*.css
 node_modules/
 npm-debug.*
